@@ -1,11 +1,13 @@
 import { Bio } from "./Bio";
 import { Cards } from "./cards";
+import { Navbar } from "./Navbar";
 
 export function Layout() {
     let bioContent =
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, itaque. Alias, tenetur aliquid enim repudiandae nisi sequi beatae eum? Doloribus nulla nisi minima ab odio consequatur incidunt numquam atque cum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, itaque. Alias, tenetur aliquid enim repudiandae nisi sequi beatae eum? Doloribus nulla nisi minima ab odio consequatur incidunt numquam atque cum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, itaque. Alias, tenetur aliquid enim repudiandae nisi sequi beatae eum? Doloribus nulla nisi minima ab odio consequatur incidunt numquam atque cum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, itaque. Alias, tenetur aliquid enim repudiandae nisi sequi beatae eum? Doloribus nulla nisi minima ab odio consequatur incidunt numquam atque cum.";
     return (
         <>
+            <Navbar />
             <div className="mainContainer">
                 <h1>About Me</h1>
                 <div className="bioContainer">
