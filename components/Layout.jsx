@@ -1,5 +1,5 @@
 import { Bio } from "./Bio";
-import { Cards } from "./cards";
+import { Cards } from "./Cards";
 import { Navbar } from "./Navbar";
 
 export function Layout() {
