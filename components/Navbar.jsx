@@ -33,7 +33,7 @@ export function Navbar() {
                         display: flex;
                         flex-direction: row;
                         gap: 20px;
-                        justify-content: space-evenly;
+                        justify-content: center;
                         width: 100%;
                         height: 2rem;
                     }

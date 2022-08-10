@@ -60,6 +60,7 @@ export function Layout() {
                     width: 80%;
                     margin: auto;
                     margin-top: 2rem;
+                    padding-top: 8px;
                     gap: 20px;
                 }
                 .cardContainerWork,
