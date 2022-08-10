@@ -21,6 +21,7 @@ export function Navbar() {
             <style jsx>
                 {`
                     .navBarContainer {
+                        overflow: hidden;
                         display: flex;
                         position: fixed;
                         top: 0;

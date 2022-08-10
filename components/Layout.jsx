@@ -59,6 +59,7 @@ export function Layout() {
                     min-height: 1000px;
                     width: 80%;
                     margin: auto;
+                    margin-top: 2rem;
                     gap: 20px;
                 }
                 .cardContainerWork,
