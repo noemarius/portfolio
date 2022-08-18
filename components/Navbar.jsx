@@ -1,56 +1,27 @@
-export function Navbar() {
+import { Menu } from "antd";
+
+export function Navbar(mode) {
+    const items = [
+        { label: "Who am I?", key: "item-1" }, // remember to pass the key prop
+        { label: "Github", key: "item-2" }, // which is required
+        { label: "linkedIn", key: "item-3" }, // which is required
+        {
+            label: "Projects",
+            key: "submenu",
+            children: [{ label: "Portfolio", key: "submenu-item-1" }],
+        },
+        {
+            label: "Wiki",
+            key: "submenu",
+            children: [
+                { label: "Python", key: "submenu-item-2" },
+                { label: "Powershell", key: "submenu-item-3" },
+            ],
+        },
+    ];
     return (
         <>
-            <div className="navBarContainer">
-                <ul className="navBar">
-                    <li>
-                        <a href="">linkedIn</a>
-                    </li>
-                    <li>
-                        <a href="">GitHub</a>
-                    </li>
-                    <li>
-                        <a href="">Project 1</a>
-                    </li>
-                    <li>
-                        <a href="">Project 2</a>
-                    </li>
-                </ul>
-            </div>
-
-            <style jsx>
-                {`
-                    .navBarContainer {
-                        overflow: hidden;
-                        display: flex;
-                        position: fixed;
-                        top: 0;
-                        width: 100%;
-                        background-color: grey;
-                    }
-                    .navBar {
-                        list-style: none;
-                        display: flex;
-                        flex-direction: row;
-                        gap: 20px;
-                        justify-content: center;
-                        width: 100%;
-                        height: 2rem;
-                    }
-                    .navBar li {
-                        width: 200px;
-                        background-color: black;
-                        height: 2rem;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                    }
-                    .navBar a {
-                        text-decoration: none;
-                        color: white;
-                    }
-                `}
-            </style>
+            <Menu items={items} mode={mode} />
         </>
     );
 }

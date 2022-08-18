@@ -1,6 +1,8 @@
 // import App from 'next/app'
 import { useState } from "react";
 import { useEffect } from "react";
+import "../assets/css/reset.css";
+import "antd/dist/antd.css";
 
 function MyApp({ Component, pageProps }) {
     const [isClient, setIsClient] = useState(false);
