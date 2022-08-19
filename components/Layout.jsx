@@ -9,7 +9,7 @@ export function Layout() {
         <>
             <div className="mainContainer">
                 <div className="navContainer">
-                    <Navbar mode="horizontal" />
+                    <Navbar menuMode="horizontal" />
                 </div>
                 <div className="contentContainer">
                     <div className="bioContainer">
@@ -101,7 +101,7 @@ export function Layout() {
                     gap: 1rem;
                 }
                 .navContainer {
-                    height: 10vh;
+                    height: auto;
                 }
                 .contentContainer {
                     position: relative;
